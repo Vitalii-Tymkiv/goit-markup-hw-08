@@ -1,0 +1,121 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $SecondaryBackgroundColor;
+
+  &__contact-link {
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: $Footerlinkcolor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $AccentColor;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__address-list {
+    margin-top: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  &__address-link {
+    color: $SecondaryTextColor;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.171;
+    letter-spacing: 0.03em;
+    transition: color 250ms $CubicBezier;
+
+    &:hover,
+    &:focus {
+      color: $AccentColor;
+    }
+  }
+
+  &__block {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__social-block {
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $PrimaryBackgroundColor;
+  }
+
+  &__form {
+    margin-left: auto;
+  }
+
+  &__submit-block {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__form-input {
+    width: 358px;
+    margin-right: 12px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    border-radius: 4px;
+    background-color: transparent;
+
+    &::placeholder {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__submit-btn {
+    position: relative;
+    padding: 10px 29px;
+    text-align: left;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      margin-left: 10px;
+      width: 24px;
+      height: 24px;
+      background-image: url(../images/icon-send.svg);
+      background-size: contain;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+%button {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: $CubicBezier;
+}
+
+.button {
+  @extend%button;
+  min-width: 200px;
+  padding: 10px 32px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $SecondaryTextColor;
+  background-color: $AccentColor;
+
+  &:hover,
+  &:focus {
+    background-color: #118ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &--primary {
+    @extend%button;
+    min-width: 73px;
+    padding: 6px 22px;
+    font-weight: 500;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $SecondaryTextColor;
+    background-color: $AccentColor;
+
+    &:hover,
+    &:focus {
+      background-color: $AccentColor;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  &--secondary {
+    @extend%button;
+    min-width: 103px;
+    padding: 6px 22px;
+    font-weight: 500;
+    line-height: 1.62;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    &:hover,
+    &:focus {
+      color: $SecondaryTextColor;
+      background-color: $AccentColor;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.logo--accent {
+  color: $AccentColor;
+}
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: $TitleTextColor;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo--white {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: $SecondaryTextColor;
+  padding: 0;
+}

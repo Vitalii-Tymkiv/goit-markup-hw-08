@@ -1,0 +1,41 @@
+@import "./utils/variables";
+
+@import "./utils/utilits";
+
+body {
+  color: $PrimaryTextColor;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  background-color: $PrimaryBackgroundColor;
+}
+
+// ----------------------LOGO------------------------------
+@import "./components/logo";
+// ------------------     NAVIGATION-----------------------
+@import "./components/navigation";
+// ------------------------PAGE-HEADER---------------------
+@import "./components/page-header";
+// -----------------------HERO-----------------------------
+@import "./components/hero";
+// -----------------------FEACHERS-------------------------
+@import "./components/feachers";
+// --------------------------ACTIVITIES--------------------
+@import "./components/activities";
+// --------------------------COMMAND-----------------------
+@import "./components/command";
+// -------------------------SOCIAL-LIST--------------------
+@import "./components/social-list";
+// ----------------------------CLIENTS---------------------
+@import "./components/clients";
+// -----------------------------PAGE-FOOTER----------------
+@import "./components/page-footer";
+// ------------------------PORTFOLIO-BUTTONS-LIST----------
+@import "./components/portfolio-buttons-list";
+// -------------------BENEFITS-LIST vs PORTFOLIO-CARD------
+@import "./components/benefits-list";
+//----------------------------BUTTONS----------------------
+@import "./utils/buttons";
+//---------------------------MODAL-------------------------
+@import "./components/modal";
+//---------------------------FORM--------------------------
+@import "./components/form";
