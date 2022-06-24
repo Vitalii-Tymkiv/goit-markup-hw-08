@@ -20,18 +20,47 @@
   <body>
     <header class="page-header">
       <nav class="navigation container">
+        <div class="mobile-nav-wrap">
         <a lang="en" class="logo" href="./index.html"
           ><span class="logo--accent">Web</span>Studio</a
         >
+        <button type="button" class="mobile-nav-wrap__menu-button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+            <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+                <use class="mobile-nav-wrap__icon-cross" href="./images/icons-sprites.svg#icon-cross"></use>
+                <use class="mobile-nav-wrap__icon-menu" href="./images/icons-sprites.svg#icon-menu"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu container" id="mobile-menu" data-menu>
+            <ul class="mobile-menu__site-nav">
+                <li class="mobile-menu__site-nav-item">
+                    <a class="mobile-menu__site-nav-link " href="./index.html">Студія</a>
+                </li>
+                <li class="mobile-menu__site-nav-item"><a class="mobile-menu__site-nav-link mobile-menu__site-nav-link--current" href="./porfolio.html">Портфоліо</a></li>
+                <li class="mobile-menu__site-nav-item"><a class="mobile-menu__site-nav-link" href="">Контакти</a></li>
+            </ul>
+
+            <ul class="mobile-menu__auth-nav">
+                <li class="mobile-menu__auth-nav-item"><a class="mobile-menu__auth-nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="mobile-menu__auth-nav-item"><a class="mobile-menu__auth-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+
+            <ul class="mobile-menu__socials">
+                <li class="mobile-menu__socials-item"><a class="mobile-menu__socials-link" href="">Instagram</a></li>
+                <li class="mobile-menu__socials-item"><a class="mobile-menu__socials-link" href="">Twitter</a></li>
+                <li class="mobile-menu__socials-item"><a class="mobile-menu__socials-link" href="">Facebook</a></li>
+                <li class="mobile-menu__socials-item"><a class="mobile-menu__socials-link" href="">LinkedIn</a></li>
+            </ul>
+            </div>
+        </div>
         <ul class="page-header__site-nav">
-          <li class="page-header__item"><a class="page-header__link" href="./index.html">Студія</a></li>
+          <li class="page-header__item"><a class="page-header__link page-header__link--current" href="./index.html">Студія</a></li>
           <li class="page-header__item">
-            <a class="page-header__link page-header__link--current" href="./porfolio.html">Портфоліо</a>
+            <a class="page-header__link" href="./porfolio.html">Портфоліо</a>
           </li>
           <li class="page-header__item"><a class="page-header__link" href="">Контакти</a></li>
         </ul>
         <ul class="page-header__auth-nav">
-          <li class="page-header__item">
+          <li class="page-header__auth-nav-item">
             <a class="page-header__contact-link" href="mailto:info@devstudio.com">
               <svg class="page-header__icon" width="16px" height="12px">
                 <use href="./images/sprite.svg#icon-envelope"></use>
@@ -39,7 +68,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="page-header__item">
+          <li class="page-header__auth-nav-item">
             <a class="page-header__contact-link" href="tel:+380961111111">
               <svg class="page-header__icon" width="10px" height="16px">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
@@ -55,6 +84,7 @@
         <div class="container">
           <h1 class="visually-hidden">Чим ми займаємось</h1>
           <ul class="buttons-list">
+            <div class="buttons-list__first-row">
             <li class="buttons-list__item">
               <button type="button" class="button--primary">Все</button>
             </li>
@@ -64,12 +94,15 @@
             <li class="buttons-list__item">
               <button type="button" class="button--secondary">Додатки</button>
             </li>
+            </div>
+            <div class="buttons-list__secondary-row">
             <li class="buttons-list__item">
               <button type="button" class="button--secondary">Дизайн</button>
             </li>
             <li class="buttons-list__item">
               <button type="button" class="button--secondary">Маркетинг</button>
             </li>
+            </div>
           </ul>
           <ul class="benefits-list">
             <li class="benefits-list__item">
@@ -80,15 +113,20 @@
                   width="370"
                   class="img"
                 />
+                <!-- <p class="benefits-list__hover-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу і сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію, чи приватну особу.
+                </p> -->
+                <div class="benefits-list__card">
+                  <h2 class="benefits-list__title">Технокряк</h2>
+                  <p class="benefits-list__text">Веб-сайт</p>
+                </div>
                 <p class="benefits-list__hover-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу і сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію, чи приватну особу.
                 </p>
-                <div class="benefits-list__card">
-                  <h2 class="benefits-list__title">Технокряк</h2>
-                  <p class="benefits-list__text">Веб-сайт</p>
-                </div>
               </a>
             </li>
             <li class="benefits-list__item">
@@ -99,17 +137,22 @@
                   width="370"
                   class="img"
                 />
+                <!-- <p class="benefits-list__hover-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу і сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію, чи приватну особу.
+                </p> -->
+                <div class="benefits-list__card">
+                  <h2 class="benefits-list__title">Постер
+                  <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="benefits-list__text">Дизайн</p>
+                </div>
                 <p class="benefits-list__hover-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу і сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію, чи приватну особу.
                 </p>
-                <div class="benefits-list__card">
-                  <h2 class="benefits-list__title">
-                    Постер <span lang="en">New Orlean vs Golden Star</span>
-                  </h2>
-                  <p class="benefits-list__text">Дизайн</p>
-                </div>
               </a>
             </li>
             <li class="benefits-list__item">
@@ -263,8 +306,10 @@
         </div>
       </section>
     </main>
+    <!--Footer-->
    <footer class="page-footer">
     <div class="container page-footer__block">
+        <div class="page-footer__tablet-wrapper">
         <div class="page-footer__address">
     <a lang="en" class="logo logo--white" href="/index.html"
             ><span class="logo--accent">Web</span>Studio</a>
@@ -308,17 +353,19 @@
                 </li>
                 </ul>
         </div>
+        </div>
         <div class="page-footer__form">
         <form>
             <p class="page-footer__text">Підпишіться на розсилання</p>
         <div class="page-footer__submit-block">
         <input type="email" class="page-footer__form-input" name="mail" placeholder="E-mail" required/>
-        <button type="submit" class="page-footer__submit-btn button">Підписатись</button>
+        <button type="submit" class="button page-footer__submit-btn">Підписатись</button>
         </form>
         </div>
         </div>
         </div>
 </footer>
+<script src="./js/menu.js"></script>
   </body>
 </html>
 <!--  -->

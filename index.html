@@ -15,9 +15,38 @@
     <!--Header-->
  <header class="page-header">
       <nav class="navigation container">
+        <div class="mobile-nav-wrap">
         <a lang="en" class="logo" href="./index.html"
           ><span class="logo--accent">Web</span>Studio</a
         >
+        <button type="button" class="mobile-nav-wrap__menu-button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+            <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+                <use class="mobile-nav-wrap__icon-cross" href="./images/icons-sprites.svg#icon-cross"></use>
+                <use class="mobile-nav-wrap__icon-menu" href="./images/icons-sprites.svg#icon-menu"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu container" id="mobile-menu" data-menu>
+            <ul class="mobile-menu__site-nav">
+                <li class="mobile-menu__site-nav-item">
+                    <a class="mobile-menu__site-nav-link mobile-menu__site-nav-link--current" href="./index.html">Студія</a>
+                </li>
+                <li class="mobile-menu__site-nav-item"><a class="mobile-menu__site-nav-link" href="./porfolio.html">Портфоліо</a></li>
+                <li class="mobile-menu__site-nav-item"><a class="mobile-menu__site-nav-link" href="">Контакти</a></li>
+            </ul>
+
+            <ul class="mobile-menu__auth-nav">
+                <li class="mobile-menu__auth-nav-item"><a class="mobile-menu__auth-nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="mobile-menu__auth-nav-item"><a class="mobile-menu__auth-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+
+            <ul class="mobile-menu__socials">
+                <li class="mobile-menu__socials-item"><a class="mobile-menu__socials-link" href="">Instagram</a></li>
+                <li class="mobile-menu__socials-item"><a class="mobile-menu__socials-link" href="">Twitter</a></li>
+                <li class="mobile-menu__socials-item"><a class="mobile-menu__socials-link" href="">Facebook</a></li>
+                <li class="mobile-menu__socials-item"><a class="mobile-menu__socials-link" href="">LinkedIn</a></li>
+            </ul>
+            </div>
+        </div>
         <ul class="page-header__site-nav">
           <li class="page-header__item"><a class="page-header__link page-header__link--current" href="./index.html">Студія</a></li>
           <li class="page-header__item">
@@ -26,7 +55,7 @@
           <li class="page-header__item"><a class="page-header__link" href="">Контакти</a></li>
         </ul>
         <ul class="page-header__auth-nav">
-          <li class="page-header__item">
+          <li class="page-header__auth-nav-item">
             <a class="page-header__contact-link" href="mailto:info@devstudio.com">
               <svg class="page-header__icon" width="16px" height="12px">
                 <use href="./images/sprite.svg#icon-envelope"></use>
@@ -34,7 +63,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="page-header__item">
+          <li class="page-header__auth-nav-item">
             <a class="page-header__contact-link" href="tel:+380961111111">
               <svg class="page-header__icon" width="10px" height="16px">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
@@ -45,7 +74,7 @@
         </ul>
       </nav>
     </header>
-<main>
+    <main>
     <!--Hero-->
     <section class="hero hero__overlay">
     <div class="container">
@@ -61,7 +90,7 @@
     <li class="feachers__item">
         <div class="feachers__icon"><svg width="70px" height="70px">
                 <use href="./images/sprite.svg#icon-antenna"></use>
-              </svg></div> 
+              </svg></div>
     <h3 class="feachers__title">увага до деталей</h3>
     <p class="feachers__text">Ідейні висновки та початок щоденної роботи для формування позиції.</p>
     </li>
@@ -259,6 +288,7 @@
 <!--Footer-->
 <footer class="page-footer">
     <div class="container page-footer__block">
+        <div class="page-footer__tablet-wrapper">
         <div class="page-footer__address">
     <a lang="en" class="logo logo--white" href="/index.html"
             ><span class="logo--accent">Web</span>Studio</a>
@@ -301,6 +331,7 @@
                         </a>
                 </li>
                 </ul>
+        </div>
         </div>
         <div class="page-footer__form">
         <form>
@@ -357,7 +388,7 @@
     <input type="checkbox" class="form__checkbox visually-hidden" name="checkbox"/>
     <span class="form__checkbox-icon"></span>
     <span class="form__checkbox-text">
-    Погоджуююсь з розсиланням і приймаю</span><a href="" class="form__checkbox-link">Умови договору</a>
+    Погоджуююсь з розсиланням і приймаю<a href="" class="form__checkbox-link">Умови договору</a></span>
     </label>
     </div>  
     <button type="submit" class="button form__button">Відправити</button> 
@@ -365,6 +396,7 @@
 </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
 

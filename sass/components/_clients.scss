@@ -10,24 +10,50 @@
   }
 
   &__list {
-    display: flex;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0;
-    justify-content: center;
+
+    @media screen and (min-width: $Mobile) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    // @media screen and (min-width: 0px) {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   margin: -15px;
+    // }
+
+    @media screen and (min-width: $Desktop) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+
+    // @media screen and (min-width: $Tablet) {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   margin: -15px;
+    // }
   }
 
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    // width: 170px;
     height: 92px;
     border: 1px solid;
     border-radius: 4px;
     color: $IconsFillColor;
     border-color: $IconsFillColor;
     transition: color 250ms $CubicBezier, border-color 250ms $CubicBezier;
+
+    @media screen and (min-width: $Desktop) {
+      width: 170px;
+    }
 
     &:hover,
     &:focus {
@@ -40,7 +66,25 @@
     fill: currentColor;
   }
 
-  &__item:not(:first-child) {
-    margin-left: 30px;
+  &__item {
+    @media screen and (min-width: $Mobile) {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: $Zero) {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    // @media screen and (min-width: 0px) {
+    //   flex-basis: calc((100% - 4 * 15px) / 2);
+    //   margin: 15px;
+    // }
+
+    @media screen and (min-width: $Tablet) {
+      flex-basis: calc((100% - 6 * 15px) / 3);
+      margin: 15px;
+    }
   }
 }

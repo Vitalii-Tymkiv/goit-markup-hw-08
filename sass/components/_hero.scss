@@ -4,6 +4,7 @@
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+
   &__overlay {
     max-width: 1600px;
     height: 600px;
@@ -19,6 +20,7 @@
     background-position: center;
     background-size: cover;
   }
+
   &__title {
     margin-top: 0px;
     margin-bottom: 30px;
@@ -28,5 +30,11 @@
     line-height: 1.36;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+
+    @media screen and (max-width: 767px) {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.62;
+    }
   }
 }

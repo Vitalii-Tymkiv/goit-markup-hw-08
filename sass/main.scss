@@ -7,6 +7,16 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   background-color: $PrimaryBackgroundColor;
+  height: 100%;
+  margin: 0;
+}
+
+// html {
+//   height: 100%;
+// }
+
+body.modal-open {
+  overflow: hidden;
 }
 
 // ----------------------LOGO------------------------------
@@ -39,3 +49,7 @@ body {
 @import "./components/modal";
 //---------------------------FORM--------------------------
 @import "./components/form";
+//-------------------------MOBILE--------------------------
+@import "./mobile/index";
+//------------------------TABLET---------------------------
+@import "./tablet/index";

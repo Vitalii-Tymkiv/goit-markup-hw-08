@@ -1,6 +1,12 @@
 // /*-------------------Navigation---------------------------*/
+// .navigation {
+//   display: flex;
+//   align-items: center;
+// }
 
 .navigation {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: $Tablet) {
+    display: flex;
+    align-items: center;
+  }
 }

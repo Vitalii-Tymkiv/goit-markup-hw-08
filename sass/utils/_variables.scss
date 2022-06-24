@@ -8,6 +8,9 @@ $ThirdBackgroundColor: rgba(245, 244, 250, 1);
 $Footerlinkcolor: rgba(255, 255, 255, 0.6);
 $IconsFillColor: #afb1b8;
 $CubicBezier: cubic-bezier(0.4, 0, 0.2, 1);
-$Mobile: 480px;
+$Mobile: 0px;
 $Tablet: 768px;
 $Desktop: 1200px;
+$Zero: 0px;
+
+// @media screen and (min-width: $Zero)

@@ -3,6 +3,14 @@
   padding-bottom: 60px;
   background-color: $SecondaryBackgroundColor;
 
+  &__address {
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   &__contact-link {
     font-weight: 400;
     font-size: 14px;
@@ -24,9 +32,11 @@
   }
 
   &__address-list {
-    margin-top: 0px;
-    padding-left: 0px;
-    margin-bottom: 0px;
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__address-link {
@@ -47,13 +57,40 @@
 
   &__block {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      flex-direction: row;
+    }
   }
 
+  &__tablet-wrapper {
+    align-items: baseline;
+    @media screen and (min-width: $Tablet) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
   &__social-block {
     margin-left: 70px;
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: $Mobile) {
+      align-items: center;
+      margin-left: 0;
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width: $Tablet) {
+      margin: 0;
+    }
+
+    @media screen and (min-width: $Desktop) {
+      margin-left: 70px;
+    }
   }
 
   &__text {
@@ -62,17 +99,41 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $PrimaryBackgroundColor;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 
   &__form {
-    margin-left: auto;
+    @media screen and (min-width: $Mobile) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width: $Desktop) {
+      margin-left: auto;
+      margin-top: 0;
+    }
   }
 
   &__submit-block {
-    display: flex;
-    margin-top: 20px;
-  }
+    @media screen and (min-width: $Mobile) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
 
+    @media screen and (min-width: $Desktop) {
+      display: block;
+      margin-top: 0;
+      margin-left: auto;
+    }
+  }
   &__form-input {
     width: 358px;
     margin-right: 12px;
@@ -91,6 +152,9 @@
     border-radius: 4px;
     background-color: transparent;
 
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+    }
     &::placeholder {
       font-family: "Roboto";
       font-style: normal;
@@ -106,6 +170,10 @@
     position: relative;
     padding: 10px 29px;
     text-align: left;
+
+    @media screen and (min-width: $Mobile) {
+      margin-top: 20px;
+    }
 
     &::after {
       content: "";

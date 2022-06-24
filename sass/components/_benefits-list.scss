@@ -4,10 +4,37 @@
   margin: -15px;
   padding-left: 0px;
 
+  @media screen and (min-width: $Mobile) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+
+  @media screen and (min-width: $Tablet) {
+    flex-wrap: wrap;
+    margin: -15px;
+    flex-direction: row;
+  }
+
   &__item {
     position: relative;
     width: 370px;
     margin: 15px;
+
+    @media screen and (min-width: $Tablet) {
+      margin: 15px;
+      flex-basis: calc((100% - 4 * 15px) / 2);
+
+      &:last-child {
+        margin-right: auto;
+      }
+    }
+
+    @media screen and (min-width: $Desktop) {
+      margin: 15px;
+      flex-basis: calc((100% - 6 * 15px) / 3);
+    }
   }
 
   &__title {

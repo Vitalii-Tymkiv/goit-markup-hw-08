@@ -12,6 +12,8 @@ p {
 ul,
 ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -20,8 +22,12 @@ ol {
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: $Mobile) {
-    width: $Mobile;
+  @media screen and (min-width: $Zero) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
 
   @media screen and (min-width: $Tablet) {
