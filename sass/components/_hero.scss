@@ -19,6 +19,72 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width: $Zero) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/mobileoverlay1x.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/mobileoverlay2x.jpg);
+      }
+    }
+
+    @media screen and (min-width: $Tablet) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/tabletoverlay1x.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/tabletoverlay2x.jpg);
+      }
+    }
+
+    @media screen and (min-width: $Desktop) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/desctopoverlay1x.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/desctopoverlay2x.jpg);
+      }
+    }
   }
 
   &__title {
@@ -31,10 +97,16 @@
     text-transform: uppercase;
     letter-spacing: 0.06em;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: $Zero) {
       font-weight: 900;
       font-size: 26px;
       line-height: 1.62;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
     }
   }
 }

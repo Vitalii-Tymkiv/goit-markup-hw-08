@@ -9,14 +9,10 @@ body {
   background-color: $PrimaryBackgroundColor;
   height: 100%;
   margin: 0;
-}
 
-// html {
-//   height: 100%;
-// }
-
-body.modal-open {
-  overflow: hidden;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 // ----------------------LOGO------------------------------

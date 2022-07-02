@@ -63,17 +63,16 @@
     letter-spacing: 0.02em;
     color: $PrimaryTextColor;
     text-decoration: none;
+  }
 
-    &:hover,
-    &:focus {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 34px;
-      line-height: 1.17;
-      color: $AccentColor;
-      letter-spacing: 0.02em;
-    }
+  &__auth-nav-link--accented {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    color: $AccentColor;
+    letter-spacing: 0.02em;
   }
 
   &__socials {

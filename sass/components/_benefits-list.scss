@@ -63,6 +63,11 @@
     text-decoration: none;
     color: $TitleTextColor;
 
+    @media screen and (min-width: $Tablet) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
     &:hover,
     &:focus {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -98,6 +103,18 @@
     border-bottom: 1px solid #eeeeee;
     background-color: $PrimaryBackgroundColor;
     z-index: 2;
+  }
+
+  &__card--growed {
+    position: relative;
+    width: 100%;
+    padding: 20px 24px;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    background-color: $PrimaryBackgroundColor;
+    z-index: 2;
+    flex-grow: 1;
   }
 
   &__hover-text {

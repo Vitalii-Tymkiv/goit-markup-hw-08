@@ -20,6 +20,11 @@
     letter-spacing: 0.01em;
     color: #757575;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $AccentColor;
+    }
   }
 
   &__input {

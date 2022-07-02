@@ -76,7 +76,6 @@ body {
   height: 100%;
   margin: 0;
 }
-
 body.modal-open {
   overflow: hidden;
 }
@@ -122,7 +121,7 @@ body.modal-open {
   margin-bottom: 0;
   border-bottom: 1px solid #ececec;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .page-header {
     border: none;
   }
@@ -247,6 +246,45 @@ body.modal-open {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 0px) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobileoverlay1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 0px) and (min-device-pixel-ratio: 2), screen and (min-width: 0px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 0px) and (min-resolution: 192dpi), screen and (min-width: 0px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobileoverlay2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tabletoverlay1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tabletoverlay2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctopoverlay1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctopoverlay2x.jpg);
+  }
+}
 .hero__title {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -257,11 +295,18 @@ body.modal-open {
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 0px) {
   .hero__title {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -400,7 +445,7 @@ body.modal-open {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .command__item {
     display: flex;
     flex-flow: column nowrap;
@@ -434,7 +479,7 @@ body.modal-open {
 .command__item + .command__item {
   margin-left: 30px;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .command__item + .command__item {
     margin-left: 0;
   }
@@ -526,7 +571,7 @@ body.modal-open {
   margin-bottom: 0px;
   padding-left: 0;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .clients__list {
     display: flex;
     flex-wrap: wrap;
@@ -563,7 +608,7 @@ body.modal-open {
 .clients__icon {
   fill: currentColor;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .clients__item {
     flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
@@ -655,7 +700,7 @@ body.modal-open {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .page-footer__social-block {
     align-items: center;
     margin-left: 0;
@@ -684,7 +729,7 @@ body.modal-open {
     text-align: center;
   }
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .page-footer__form {
     display: flex;
     flex-direction: column;
@@ -699,7 +744,7 @@ body.modal-open {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .page-footer__submit-block {
     display: flex;
     flex-direction: column;
@@ -769,7 +814,7 @@ body.modal-open {
   padding: 10px 29px;
   text-align: left;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .page-footer__submit-btn {
     margin-top: 20px;
   }
@@ -801,7 +846,7 @@ body.modal-open {
   margin: -15px;
   padding-left: 0px;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .benefits-list {
     display: flex;
     justify-content: center;
@@ -860,6 +905,13 @@ body.modal-open {
   text-decoration: none;
   color: rgb(33, 33, 33);
 }
+@media screen and (min-width: 768px) {
+  .benefits-list__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
 .benefits-list__link:hover, .benefits-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -888,6 +940,17 @@ body.modal-open {
   border-bottom: 1px solid #eeeeee;
   background-color: #ffffff;
   z-index: 2;
+}
+.benefits-list__card--growed {
+  position: relative;
+  width: 100%;
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #ffffff;
+  z-index: 2;
+  flex-grow: 1;
 }
 .benefits-list__hover-text {
   position: absolute;
@@ -978,7 +1041,7 @@ body.modal-open {
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .backdrop {
     display: flex;
     padding: 94px 15px;
@@ -1004,7 +1067,7 @@ body.modal-open {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .modal {
     padding: 40px;
   }
@@ -1052,6 +1115,9 @@ body.modal-open {
   letter-spacing: 0.01em;
   color: #757575;
   cursor: pointer;
+}
+.form__label:hover, .form__label:focus {
+  color: rgb(33, 150, 243);
 }
 .form__input {
   position: relative;
@@ -1153,7 +1219,7 @@ body.modal-open {
   margin-top: 20px;
   padding-left: 14px;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .form__checkbox-field {
     padding-left: 0;
   }
@@ -1194,7 +1260,7 @@ body.modal-open {
   letter-spacing: 0.03em;
   color: #757575;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .form__checkbox-text {
     font-size: 12px;
     line-height: 1.16;
@@ -1216,7 +1282,7 @@ body.modal-open {
   letter-spacing: 0.03em;
   color: rgb(33, 150, 243);
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .form__checkbox-link {
     font-size: 12px;
     line-height: 1.16;
@@ -1333,7 +1399,7 @@ body.is-open .mobile-nav-wrap .logo {
   color: rgb(117, 117, 117);
   text-decoration: none;
 }
-.mobile-menu__auth-nav-link:hover, .mobile-menu__auth-nav-link:focus {
+.mobile-menu__auth-nav-link--accented {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;

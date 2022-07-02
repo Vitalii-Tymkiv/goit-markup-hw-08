@@ -15,53 +15,108 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation container">
         <div class="mobile-nav-wrap">
-        <a lang="en" class="logo" href="./index.html"
-          ><span class="logo--accent">Web</span>Studio</a
-        >
-        <button type="button" class="mobile-nav-wrap__menu-button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
-            <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
-                <use class="mobile-nav-wrap__icon-cross" href="./images/icons-sprites.svg#icon-cross"></use>
-                <use class="mobile-nav-wrap__icon-menu" href="./images/icons-sprites.svg#icon-menu"></use>
+          <a lang="en" class="logo" href="./index.html"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
+          <button
+            type="button"
+            class="mobile-nav-wrap__menu-button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                class="mobile-nav-wrap__icon-cross"
+                href="./images/icons-sprites.svg#icon-cross"
+              ></use>
+              <use
+                class="mobile-nav-wrap__icon-menu"
+                href="./images/icons-sprites.svg#icon-menu"
+              ></use>
             </svg>
-        </button>
-        <div class="mobile-menu container" id="mobile-menu" data-menu>
+          </button>
+          <div class="mobile-menu container" id="mobile-menu" data-menu>
             <ul class="mobile-menu__site-nav">
-                <li class="mobile-menu__site-nav-item">
-                    <a class="mobile-menu__site-nav-link " href="./index.html">Студія</a>
-                </li>
-                <li class="mobile-menu__site-nav-item"><a class="mobile-menu__site-nav-link mobile-menu__site-nav-link--current" href="./porfolio.html">Портфоліо</a></li>
-                <li class="mobile-menu__site-nav-item"><a class="mobile-menu__site-nav-link" href="">Контакти</a></li>
+              <li class="mobile-menu__site-nav-item">
+                <a class="mobile-menu__site-nav-link" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="mobile-menu__site-nav-item">
+                <a
+                  class="mobile-menu__site-nav-link mobile-menu__site-nav-link--current"
+                  href="./porfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mobile-menu__site-nav-item">
+                <a class="mobile-menu__site-nav-link" href="">Контакти</a>
+              </li>
             </ul>
 
             <ul class="mobile-menu__auth-nav">
-                <li class="mobile-menu__auth-nav-item"><a class="mobile-menu__auth-nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                <li class="mobile-menu__auth-nav-item"><a class="mobile-menu__auth-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li class="mobile-menu__auth-nav-item">
+                <a class="mobile-menu__auth-nav-link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__auth-nav-item">
+                <a
+                  class="mobile-menu__auth-nav-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
             </ul>
 
             <ul class="mobile-menu__socials">
-                <li class="mobile-menu__socials-item"><a class="mobile-menu__socials-link" href="">Instagram</a></li>
-                <li class="mobile-menu__socials-item"><a class="mobile-menu__socials-link" href="">Twitter</a></li>
-                <li class="mobile-menu__socials-item"><a class="mobile-menu__socials-link" href="">Facebook</a></li>
-                <li class="mobile-menu__socials-item"><a class="mobile-menu__socials-link" href="">LinkedIn</a></li>
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link" href="">Instagram</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link" href="">Facebook</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link" href="">LinkedIn</a>
+              </li>
             </ul>
-            </div>
+          </div>
         </div>
         <ul class="page-header__site-nav">
-          <li class="page-header__item"><a class="page-header__link page-header__link--current" href="./index.html">Студія</a></li>
           <li class="page-header__item">
-            <a class="page-header__link" href="./porfolio.html">Портфоліо</a>
+            <a class="page-header__link" href="./index.html">Студія</a>
           </li>
-          <li class="page-header__item"><a class="page-header__link" href="">Контакти</a></li>
+          <li class="page-header__item">
+            <a
+              class="page-header__link page-header__link--current"
+              href="./porfolio.html"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="">Контакти</a>
+          </li>
         </ul>
         <ul class="page-header__auth-nav">
           <li class="page-header__auth-nav-item">
-            <a class="page-header__contact-link" href="mailto:info@devstudio.com">
+            <a
+              class="page-header__contact-link"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="page-header__icon" width="16px" height="12px">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
@@ -83,91 +138,101 @@
       <section class="portfolio section">
         <div class="container">
           <h1 class="visually-hidden">Чим ми займаємось</h1>
-          <ul class="buttons-list">
+          <div class="buttons-list">
             <div class="buttons-list__first-row">
-            <li class="buttons-list__item">
-              <button type="button" class="button--primary">Все</button>
-            </li>
-            <li class="buttons-list__item">
-              <button type="button" class="button--secondary">Веб-сайти</button>
-            </li>
-            <li class="buttons-list__item">
-              <button type="button" class="button--secondary">Додатки</button>
-            </li>
+              <div class="buttons-list__item">
+                <button type="button" class="button--primary">Все</button>
+              </div>
+              <div class="buttons-list__item">
+                <button type="button" class="button--secondary">
+                  Веб-сайти
+                </button>
+              </div>
+              <div class="buttons-list__item">
+                <button type="button" class="button--secondary">Додатки</button>
+              </div>
             </div>
             <div class="buttons-list__secondary-row">
-            <li class="buttons-list__item">
-              <button type="button" class="button--secondary">Дизайн</button>
-            </li>
-            <li class="buttons-list__item">
-              <button type="button" class="button--secondary">Маркетинг</button>
-            </li>
+              <div class="buttons-list__item">
+                <button type="button" class="button--secondary">Дизайн</button>
+              </div>
+              <div class="buttons-list__item">
+                <button type="button" class="button--secondary">
+                  Маркетинг
+                </button>
+              </div>
             </div>
-          </ul>
+          </div>
           <ul class="benefits-list">
             <li class="benefits-list__item">
               <a href="" class="benefits-list__link">
-                <img
-                  src="./images/tekhnokriak.jpg"
-                  alt="технопарк"
-                  width="370"
-                  class="img"
-                />
-                <!-- <p class="benefits-list__hover-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу і сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію, чи приватну особу.
-                </p> -->
-                <div class="benefits-list__card">
+                <div class="benefits-list__thumb">
+                  <img
+                    srcset="
+                      ./images/tekhnokriak1x.jpg 1x,
+                      ./images/tekhnokriak2x.jpg 2x
+                    "
+                    src="./images/tekhnokriak.jpg"
+                    alt="технопарк"
+                    width="370"
+                    class="img"
+                  />
+                  <p class="benefits-list__hover-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу і сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію, чи приватну особу.
+                  </p>
+                </div>
+                <div class="benefits-list__card--growed">
                   <h2 class="benefits-list__title">Технокряк</h2>
                   <p class="benefits-list__text">Веб-сайт</p>
                 </div>
-                <p class="benefits-list__hover-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу і сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію, чи приватну особу.
-                </p>
               </a>
             </li>
             <li class="benefits-list__item">
               <a href="" class="benefits-list__link">
-                <img
-                  src="./images/poster.jpg"
-                  alt="постер баскетбольного матчу"
-                  width="370"
-                  class="img"
-                />
-                <!-- <p class="benefits-list__hover-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу і сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію, чи приватну особу.
-                </p> -->
+                <div class="benefits-list__thumb">
+                  <img
+                    srcset="./images/poster1x.jpg 1x, ./images/poster2x.jpg 2x"
+                    src="./images/poster.jpg"
+                    alt="постер баскетбольного матчу"
+                    width="370"
+                    class="img"
+                  />
+                  <p class="benefits-list__hover-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу і сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію, чи приватну особу.
+                  </p>
+                </div>
                 <div class="benefits-list__card">
-                  <h2 class="benefits-list__title">Постер
-                  <span lang="en">New Orlean vs Golden Star</span>
+                  <h2 class="benefits-list__title">
+                    Постер
+                    <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
                   <p class="benefits-list__text">Дизайн</p>
                 </div>
-                <p class="benefits-list__hover-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу і сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію, чи приватну особу.
-                </p>
               </a>
             </li>
             <li class="benefits-list__item">
               <a href="" class="benefits-list__link">
-                <img
-                  src="./images/restaurant.jpg"
-                  alt="ресторан морської їжі"
-                  width="370"
-                  class="img"
-                />
-                <p class="benefits-list__hover-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу і сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію, чи приватну особу.
-                </p>
+                <div class="benefits-list__thumb">
+                  <img
+                    srcset="
+                      /images/restaurant1x.jpg  1x,
+                      ./images/restaurant2x.jpg 2x
+                    "
+                    src="./images/restaurant.jpg"
+                    alt="ресторан морської їжі"
+                    width="370"
+                    class="img"
+                  />
+                  <p class="benefits-list__hover-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу і сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію, чи приватну особу.
+                  </p>
+                </div>
                 <div class="benefits-list__card">
                   <h2 class="benefits-list__title">
                     Ресторан <span lang="en">Seafood</span>
@@ -178,17 +243,23 @@
             </li>
             <li class="benefits-list__item">
               <a href="" class="benefits-list__link">
-                <img
-                  src="./images/project-prime.jpg"
-                  alt="Маркетинг першого проекту"
-                  width="370"
-                  class="img"
-                />
-                <p class="benefits-list__hover-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу і сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію, чи приватну особу.
-                </p>
+                <div class="benefits-list__thumb">
+                  <img
+                    srcset="
+                      ./images/project-prime1x.jpg 1x,
+                      ./images/project-prime2x.jpg 2x
+                    "
+                    src="./images/project-prime.jpg"
+                    alt="Маркетинг першого проекту"
+                    width="370"
+                    class="img"
+                  />
+                  <p class="benefits-list__hover-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу і сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію, чи приватну особу.
+                  </p>
+                </div>
                 <div class="benefits-list__card">
                   <h2 class="benefits-list__title" lang="en">
                     Проєкт <span lang="en">Prime</span>
@@ -199,17 +270,23 @@
             </li>
             <li class="benefits-list__item">
               <a href="" class="benefits-list__link">
-                <img
-                  src="./images/project-boxes.jpg"
-                  alt="Додаток проєкту контейнери"
-                  width="370"
-                  class="img"
-                />
-                <p class="benefits-list__hover-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу і сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію, чи приватну особу.
-                </p>
+                <div class="benefits-list__thumb">
+                  <img
+                    srcset="
+                      ./images/project-boxes1x.jpg 1x,
+                      ./images/project-boxes2x.jpg 2x
+                    "
+                    src="./images/project-boxes.jpg"
+                    alt="Додаток проєкту контейнери"
+                    width="370"
+                    class="img"
+                  />
+                  <p class="benefits-list__hover-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу і сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію, чи приватну особу.
+                  </p>
+                </div>
                 <div class="benefits-list__card">
                   <h2 class="benefits-list__title">
                     Проєкт <span lang="en">Boxes</span>
@@ -220,17 +297,23 @@
             </li>
             <li class="benefits-list__item">
               <a href="" class="benefits-list__link">
-                <img
-                  src="./images/inspiration.jpg"
-                  alt="Сайт натхнення немає кордонів"
-                  width="370"
-                  class="img"
-                />
-                <p class="benefits-list__hover-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу і сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію, чи приватну особу.
-                </p>
+                <div class="benefits-list__thumb">
+                  <img
+                    srcset="
+                      ./images/inspiration1x.jpg 1x,
+                      ./images/inspiration2x.jpg 2x
+                    "
+                    src="./images/inspiration.jpg"
+                    alt="Сайт натхнення немає кордонів"
+                    width="370"
+                    class="img"
+                  />
+                  <p class="benefits-list__hover-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу і сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію, чи приватну особу.
+                  </p>
+                </div>
                 <div class="benefits-list__card">
                   <h2 class="benefits-list__title" lang="en">
                     Inspiration has no Borders
@@ -241,17 +324,23 @@
             </li>
             <li class="benefits-list__item">
               <a href="" class="benefits-list__link">
-                <img
-                  src="./images/limited-edition.jpg"
-                  alt="Дизайн обмеженого видання"
-                  width="370"
-                  class="img"
-                />
-                <p class="benefits-list__hover-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу і сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію, чи приватну особу.
-                </p>
+                <div class="benefits-list__thumb">
+                  <img
+                    srcset="
+                      ./images/limited-edition1x.jpg 1x,
+                      ./images/limited-edition2x.jpg 2x
+                    "
+                    src="./images/limited-edition.jpg"
+                    alt="Дизайн обмеженого видання"
+                    width="370"
+                    class="img"
+                  />
+                  <p class="benefits-list__hover-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу і сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію, чи приватну особу.
+                  </p>
+                </div>
                 <div class="benefits-list__card">
                   <h2 class="benefits-list__title">
                     Видання <span lang="en"> Limited Edition</span>
@@ -262,17 +351,23 @@
             </li>
             <li class="benefits-list__item">
               <a href="" class="benefits-list__link">
-                <img
-                  src="./images/project-lab.jpg"
-                  alt="Маркетинг проєкту ЛАБ"
-                  width="370"
-                  class="img"
-                />
-                <p class="benefits-list__hover-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу і сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію, чи приватну особу.
-                </p>
+                <div class="benefits-list__thumb">
+                  <img
+                    srcset="
+                      ./images/project-lab1x.jpg 1x,
+                      ./images/project-lab2x.jpg 2x
+                    "
+                    src="./images/project-lab.jpg"
+                    alt="Маркетинг проєкту ЛАБ"
+                    width="370"
+                    class="img"
+                  />
+                  <p class="benefits-list__hover-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу і сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію, чи приватну особу.
+                  </p>
+                </div>
                 <div class="benefits-list__card">
                   <h2 class="benefits-list__title">
                     Проєкт <span lang="en">LAB</span>
@@ -283,17 +378,23 @@
             </li>
             <li class="benefits-list__item">
               <a href="" class="benefits-list__link">
-                <img
-                  src="./images/growing-business.jpg"
-                  alt="Додаток зростаючий бізнес"
-                  width="370"
-                  class="img"
-                />
-                <p class="benefits-list__hover-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу і сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію, чи приватну особу.
-                </p>
+                <div class="benefits-list__thumb">
+                  <img
+                    srcset="
+                      ./images/growing-business1x.jpg 1x,
+                      ./images/growing-business2x.jpg 2x
+                    "
+                    src="./images/growing-business.jpg"
+                    alt="Додаток зростаючий бізнес"
+                    width="370"
+                    class="img"
+                  />
+                  <p class="benefits-list__hover-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу і сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію, чи приватну особу.
+                  </p>
+                </div>
                 <div class="benefits-list__card">
                   <h2 class="benefits-list__title" lang="en">
                     Growing Business
@@ -307,65 +408,109 @@
       </section>
     </main>
     <!--Footer-->
-   <footer class="page-footer">
-    <div class="container page-footer__block">
+    <footer class="page-footer">
+      <div class="container page-footer__block">
         <div class="page-footer__tablet-wrapper">
-        <div class="page-footer__address">
-    <a lang="en" class="logo logo--white" href="/index.html"
-            ><span class="logo--accent">Web</span>Studio</a>
-    <address>
-            <ul class="page-footer__address-list">
-        <li class="page-footer__item">
-            <a class="page-footer__address-link" href="https://goo.gl/maps/PjR9KqvbA5ErwzuY9" target="_blank" rel="noopener noreferrer">м. Київ, п-кт Лесі Українки, 26</a>
-        </li>
-        <li class="page-footer__item">
-            <a class="page-footer__contact-link" href="mailto:info@example.com">info@example.com</a>
-        </li>
-        <li class="page-footer__item">   
-            <a class="page-footer__contact-link" href="tel:+380991111111">+38 099 111 11 11</a>
-        </li>
-    </ul>
-    </address>
-    </div>
-    <div class="page-footer__social-block">
-                <p class="page-footer__text">Приєднуйтесь</p>
-    <ul class="social-list">
-                    <li class="social-list__item">
-                        <a href="" class="social-list__link--filled">
-                        <svg class="social-list__icon--white" width="20px" height="20px">
-                <use href="./images/sprite.svg#icon-instagram"></use></svg>   
-                        </a>
-                    </li>
-                    <li class="social-list__item"> <a href="" class="social-list__link--filled">
-                        <svg class="social-list__icon--white" width="20px" height="20px">
-                <use href="./images/sprite.svg#icon-twitter"></use></svg>     
-                        </a>
+          <div class="page-footer__address">
+            <a lang="en" class="logo logo--white" href="/index.html"
+              ><span class="logo--accent">Web</span>Studio</a
+            >
+            <address>
+              <ul class="page-footer__address-list">
+                <li class="page-footer__item">
+                  <a
+                    class="page-footer__address-link"
+                    href="https://goo.gl/maps/PjR9KqvbA5ErwzuY9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >м. Київ, п-кт Лесі Українки, 26</a
+                  >
                 </li>
-                    <li class="social-list__item"> <a href="" class="social-list__link--filled">
-                        <svg class="social-list__icon--white" width="20px" height="20px">
-                <use href="./images/sprite.svg#icon-facebook"></use></svg>     
-                        </a>
+                <li class="page-footer__item">
+                  <a
+                    class="page-footer__contact-link"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
                 </li>
-                    <li class="social-list__item"> <a href="" class="social-list__link--filled">
-                        <svg class="social-list__icon--white" width="20px" height="20px">
-                <use href="./images/sprite.svg#icon-linkedin"></use></svg>    
-                        </a>
+                <li class="page-footer__item">
+                  <a class="page-footer__contact-link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
                 </li>
-                </ul>
-        </div>
+              </ul>
+            </address>
+          </div>
+          <div class="page-footer__social-block">
+            <p class="page-footer__text">Приєднуйтесь</p>
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a href="" class="social-list__link--filled">
+                  <svg
+                    class="social-list__icon--white"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="" class="social-list__link--filled">
+                  <svg
+                    class="social-list__icon--white"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="" class="social-list__link--filled">
+                  <svg
+                    class="social-list__icon--white"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="" class="social-list__link--filled">
+                  <svg
+                    class="social-list__icon--white"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="page-footer__form">
-        <form>
+          <form>
             <p class="page-footer__text">Підпишіться на розсилання</p>
-        <div class="page-footer__submit-block">
-        <input type="email" class="page-footer__form-input" name="mail" placeholder="E-mail" required/>
-        <button type="submit" class="button page-footer__submit-btn">Підписатись</button>
-        </form>
+            <div class="page-footer__submit-block">
+              <input
+                type="email"
+                class="page-footer__form-input"
+                name="mail"
+                placeholder="E-mail"
+                required
+              />
+              <button type="submit" class="button page-footer__submit-btn">
+                Підписатись
+              </button>
+            </div>
+          </form>
         </div>
-        </div>
-        </div>
-</footer>
-<script src="./js/menu.js"></script>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 <!--  -->

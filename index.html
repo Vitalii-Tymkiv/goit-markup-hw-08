@@ -35,7 +35,7 @@
             </ul>
 
             <ul class="mobile-menu__auth-nav">
-                <li class="mobile-menu__auth-nav-item"><a class="mobile-menu__auth-nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="mobile-menu__auth-nav-item"><a class="mobile-menu__auth-nav-link mobile-menu__auth-nav-link--accented" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 <li class="mobile-menu__auth-nav-item"><a class="mobile-menu__auth-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             </ul>
 
@@ -123,9 +123,9 @@
     <div class="container">
     <h2 class="activities__title">Чим ми займаємось</h2>
     <ul class="activities__list">
-        <li class="activities__item"><div class="activities__thumb"><img src="./images/machinessquooshed.jpg" alt="розробка програмного забезпечення" width="370" class="img" /><p class="activities__text">десктопні додатки</p></div></li>
-        <li class="activities__item"><div class="activities__thumb"><img src="./images/stylessqooshed.jpg" alt="тестування мобільного додатку" width="370" class="img" /><p class="activities__text">мобільні додатки</p></div></li>
-        <li class="activities__item"><div class="activities__thumb"><img src="./images/designsquooshed.jpg" alt="робота із палітрою кольорів" width="370" class="img" /><p class="activities__text">дизайнерські рішення</p></div></li>
+        <li class="activities__item"><div class="activities__thumb"><img srcset="./images/mashines1x.jpg 1x, ./images/mashines2x.jpg 2x" src="./images/machinessquooshed.jpg" alt="розробка програмного забезпечення" width="370" class="img" /><p class="activities__text">десктопні додатки</p></div></li>
+        <li class="activities__item"><div class="activities__thumb"><img srcset="./images/mobile1x.jpg 1x, ./images/mobile2x.jpg 2x" src="./images/stylessqooshed.jpg" alt="тестування мобільного додатку" width="370" class="img" /><p class="activities__text">мобільні додатки</p></div></li>
+        <li class="activities__item"><div class="activities__thumb"><img srcset="./images/designers1x.jpg 1x, ./images/designers2x.jpg 2x" src="./images/designsquooshed.jpg" alt="робота із палітрою кольорів" width="370" class="img" /><p class="activities__text">дизайнерські рішення</p></div></li>
     </ul>
     </div>    
 </section>
@@ -136,7 +136,7 @@
     <ul class="command__list">
         <li class="command__item">
             
-            <img class="img" src="./images/productdesignersquooshed.jpg" alt="product designer" width="270">
+            <img class="img" srcset="./images/designer1x.jpg 1x, ./images/designer2x.jpg 2x" src="./images/productdesignersquooshed.jpg" alt="product designer" width="270">
                 <div class="command__card">
                 <h3 class="command__title">Ігор Дем`яненко</h3>
                 <p class="command__text" lang="en">Product Designer</p>
@@ -168,7 +168,7 @@
         </li>
         <li class="command__item">
             
-            <img class="img" src="./images/frontenddeveloper.jpg" alt="frontend developer" width="270">
+            <img class="img" srcset="./images/frontend1x.jpg 1x, ./images/frontend2x.jpg 2x" src="./images/frontenddeveloper.jpg" alt="frontend developer" width="270">
             <div class="command__card">
                 <h3 class="command__title">Ольга Рєпіна</h3>
                 <p class="command__text" lang="en">Frontend Developer</p>
@@ -200,8 +200,8 @@
         </li>
         <li class="command__item">
             
-            <img class="img" src="./images/marketing.jpg" alt="marketing" width="270">
-            <div class="command__card">
+            <img class="img" srcset="./images/marketing1x.jpg 1x, ./images/marketing2x.jpg 2x" src="./images/marketing.jpg" alt="marketing" width="270">
+                        <div class="command__card">
                 <h3 class="command__title">Микола Тарасов</h3>
                 <p class="command__text" lang="en">Marketing</p>
                 <ul class="social-list">
@@ -231,7 +231,7 @@
                     </li>
         <li class="command__item">
             
-            <img class="img" src="./images/uldesignersquooshed.jpg" alt="ul designer" width="270">
+            <img class="img" srcset="./images/uldesigner1x.jpg 1x, ./images/uldesigner2x.jpg 2x" src="./images/uldesignersquooshed.jpg" alt="ul designer" width="270">
             <div class="command__card">
                 <h3 class="command__title">Михайло Єрмаков</h3>
                 <p class="command__text" lang="en">Ul Designer</p>
@@ -339,10 +339,11 @@
         <div class="page-footer__submit-block">
         <input type="email" class="page-footer__form-input" name="mail" placeholder="E-mail" required/>
         <button type="submit" class="button page-footer__submit-btn">Підписатись</button>
+        </div>
         </form>
         </div>
         </div>
-        </div>
+        
 </footer>
 <!--___________ MODAL______________-->
 <div class="backdrop is-hidden" data-modal>
