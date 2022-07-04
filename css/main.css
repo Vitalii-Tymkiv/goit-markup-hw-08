@@ -957,16 +957,6 @@ body.modal-open {
   border-bottom: 1px solid #eeeeee;
   background-color: #ffffff;
   z-index: 2;
-}
-.benefits-list__card--growed {
-  position: relative;
-  width: 100%;
-  padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  background-color: #ffffff;
-  z-index: 2;
   flex-grow: 1;
 }
 .benefits-list__hover-text {
@@ -1380,6 +1370,7 @@ body.is-open .mobile-nav-wrap .logo {
 .mobile-menu.is-open {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .mobile-menu__site-nav-item {
   text-align: left;
