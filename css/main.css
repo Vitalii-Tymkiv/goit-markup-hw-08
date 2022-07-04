@@ -53,7 +53,7 @@ ol {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -106,6 +106,12 @@ body.modal-open {
     padding-bottom: 16px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
 
 .logo--white {
   display: inline-block;
@@ -126,11 +132,6 @@ body.modal-open {
   background-color: rgb(255, 255, 255);
   margin-bottom: 0;
   border-bottom: 1px solid #ececec;
-}
-@media screen and (min-width: 320px) {
-  .page-header {
-    border: none;
-  }
 }
 @media screen and (min-width: 768px) {
   .page-header__item + .page-header__item {
@@ -164,6 +165,16 @@ body.modal-open {
 }
 .page-header__link--current {
   color: rgb(33, 150, 243);
+}
+.page-header__link--current::after {
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: rgb(33, 150, 243);
 }
 @media screen and (max-width: 767px) {
   .page-header__site-nav {
@@ -231,6 +242,28 @@ body.modal-open {
 .page-header__contact-link:hover, .page-header__contact-link:focus {
   color: rgb(33, 150, 243);
 }
+@media screen and (max-width: 1199px) {
+  .page-header__contact-link--higher {
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__contact-link--higher {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .page-header__contact-link--lower {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__contact-link--lower {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 .page-header__icon {
   margin-right: 10px;
   fill: currentColor;
@@ -242,7 +275,7 @@ body.modal-open {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -298,7 +331,7 @@ body.modal-open {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctopoverlay2x.jpg);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero__overlay {
     height: 400px;
   }
@@ -445,12 +478,16 @@ body.modal-open {
   color: #ffffff;
 }
 
+.command {
+  background-color: rgb(245, 244, 250);
+}
 .command__card {
   padding: 30px 32px 30px 32px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .command__list {
@@ -590,6 +627,12 @@ body.modal-open {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 1199px) {
+  .clients__title {
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 .clients__list {
   margin-top: 0px;
@@ -1108,9 +1151,14 @@ body.modal-open {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .form__legend {
+    line-height: 1.15;
+  }
 }
 .form__label {
   display: block;
@@ -1225,6 +1273,7 @@ body.modal-open {
   position: relative;
   margin-top: 20px;
   padding-left: 14px;
+  text-align: center;
 }
 @media screen and (min-width: 320px) {
   .form__checkbox-field {
@@ -1263,8 +1312,6 @@ body.modal-open {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1274,10 +1321,10 @@ body.modal-open {
     line-height: 1.16;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .form__checkbox-text {
-    font-size: 12px;
-    line-height: 1.16;
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 .form__checkbox-link {
@@ -1286,8 +1333,6 @@ body.modal-open {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgb(33, 150, 243);
 }
@@ -1297,10 +1342,10 @@ body.modal-open {
     line-height: 1.16;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .form__checkbox-link {
-    font-size: 12px;
-    line-height: 1.16;
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
@@ -1308,7 +1353,7 @@ body.modal-open {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 40px;
+  border-bottom: 1px solid #ececec;
 }
 .mobile-nav-wrap__menu-button {
   display: inline-flex;
@@ -1365,6 +1410,8 @@ body.is-open .mobile-nav-wrap .logo {
   bottom: 0;
   z-index: 5;
   overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
   background-color: #ffffff;
 }
 .mobile-menu.is-open {
@@ -1418,6 +1465,7 @@ body.is-open .mobile-nav-wrap .logo {
   line-height: 1.17;
   color: rgb(33, 150, 243);
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 .mobile-menu__socials {
   margin-top: 64px;

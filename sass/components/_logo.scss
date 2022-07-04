@@ -16,6 +16,11 @@
     padding-top: 16px;
     padding-bottom: 16px;
   }
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .logo--white {

@@ -8,7 +8,8 @@
   bottom: 0;
   z-index: 5;
   overflow-y: scroll;
-
+  width: 100vw;
+  height: 100vh;
   background-color: $PrimaryBackgroundColor;
 
   // @media screen and (min-width: $Tablet) {
@@ -75,6 +76,7 @@
     line-height: 1.17;
     color: $AccentColor;
     letter-spacing: 0.02em;
+    white-space: nowrap;
   }
 
   &__socials {

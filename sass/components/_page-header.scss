@@ -6,9 +6,9 @@
   margin-bottom: 0;
   border-bottom: 1px solid #ececec;
 
-  @media screen and (min-width: $Mobile) {
-    border: none;
-  }
+  // @media screen and (min-width: $Mobile) {
+  //   border: none;
+  // }
 
   @media screen and (min-width: $Tablet) {
     &__item + &__item {
@@ -47,6 +47,17 @@
 
     &--current {
       color: $AccentColor;
+
+      &::after {
+        position: absolute;
+        bottom: -1px;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: $AccentColor;
+      }
     }
   }
 
@@ -119,6 +130,26 @@
     &:hover,
     &:focus {
       color: $AccentColor;
+    }
+  }
+
+  &__contact-link--higher {
+    @media screen and (max-width: 1199px) {
+      padding-top: 20px;
+    }
+    @media screen and (min-width: $Desktop) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__contact-link--lower {
+    @media screen and (max-width: 1199px) {
+      padding-bottom: 20px;
+    }
+    @media screen and (min-width: $Desktop) {
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
   }
   &__icon {

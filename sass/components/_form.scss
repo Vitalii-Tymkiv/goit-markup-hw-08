@@ -5,9 +5,12 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
+    @media screen and (min-width: $Desktop) {
+      line-height: 1.15;
+    }
   }
 
   &__label {
@@ -114,6 +117,7 @@
     position: relative;
     margin-top: 20px;
     padding-left: 14px;
+    text-align: center;
 
     @media screen and (min-width: $Mobile) {
       padding-left: 0;
@@ -155,8 +159,8 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    // font-size: 14px;
+    // line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
 
@@ -164,9 +168,9 @@
       font-size: 12px;
       line-height: 1.16;
     }
-    @media screen and (min-width: $Tablet) {
-      font-size: 12px;
-      line-height: 1.16;
+    @media screen and (min-width: $Desktop) {
+      font-size: 14px;
+      line-height: 1.71;
     }
   }
 
@@ -176,8 +180,8 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    // font-size: 14px;
+    // line-height: 1.71;
     letter-spacing: 0.03em;
     color: $AccentColor;
 
@@ -186,9 +190,9 @@
       line-height: 1.16;
     }
 
-    @media screen and (min-width: $Tablet) {
-      font-size: 12px;
-      line-height: 1.16;
+    @media screen and (min-width: $Desktop) {
+      font-size: 14px;
+      line-height: 1.71;
     }
   }
 }
