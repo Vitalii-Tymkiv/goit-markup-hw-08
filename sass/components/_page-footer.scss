@@ -90,6 +90,7 @@
 
     @media screen and (min-width: $Desktop) {
       margin-left: 70px;
+      align-items: flex-start;
     }
   }
 
@@ -117,26 +118,13 @@
     @media screen and (min-width: $Desktop) {
       margin-left: auto;
       margin-top: 0;
-    }
-  }
-
-  &__submit-block {
-    @media screen and (min-width: $Mobile) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 20px;
-    }
-
-    @media screen and (min-width: $Desktop) {
       display: block;
-      margin-top: 0;
-      margin-left: auto;
     }
   }
+
   &__form-input {
     width: 358px;
-    margin-right: 12px;
+    margin-top: 20px;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -152,9 +140,14 @@
     border-radius: 4px;
     background-color: transparent;
 
-    @media screen and (max-width: 767px) {
-      margin-right: 0;
+    @media screen and (max-width: 479px) {
+      max-width: 315px;
     }
+
+    @media screen and (min-width: $Desktop) {
+      margin-right: 12px;
+    }
+
     &::placeholder {
       font-family: "Roboto";
       font-style: normal;

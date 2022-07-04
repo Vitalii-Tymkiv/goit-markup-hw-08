@@ -1,6 +1,10 @@
 .command {
   &__card {
     padding: 30px 32px 30px 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__list {

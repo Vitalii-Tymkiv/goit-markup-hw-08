@@ -5,6 +5,12 @@
   padding-top: 200px;
   padding-bottom: 200px;
 
+  @media screen and (max-width: 767px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
+  }
+
   &__overlay {
     max-width: 1600px;
     height: 600px;
@@ -84,6 +90,9 @@
           ),
           url(../images/desctopoverlay2x.jpg);
       }
+    }
+    @media screen and (max-width: 767px) {
+      height: 400px;
     }
   }
 

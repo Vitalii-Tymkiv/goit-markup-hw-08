@@ -4,7 +4,7 @@
   &__icon {
     display: flex;
     margin: 0;
-    // width: 270px;
+    margin-bottom: 30px;
     height: 120px;
     justify-content: center;
     align-items: center;
@@ -38,6 +38,9 @@
       flex-basis: calc((100% - 4 * 15px) / 2);
       margin: 15px;
     }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   // &__item + &__item {
@@ -51,8 +54,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--title-text-color);
-    margin-top: 30px;
+    color: $TitleTextColor;
     margin-bottom: 10px;
 
     @media screen and (max-width: 767px) {

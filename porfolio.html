@@ -67,7 +67,9 @@
 
             <ul class="mobile-menu__auth-nav">
               <li class="mobile-menu__auth-nav-item">
-                <a class="mobile-menu__auth-nav-link" href="tel:+380961111111"
+                <a
+                  class="mobile-menu__auth-nav-link mobile-menu__auth-nav-link--accented"
+                  href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -82,7 +84,9 @@
 
             <ul class="mobile-menu__socials">
               <li class="mobile-menu__socials-item">
-                <a class="mobile-menu__socials-link" href="">Instagram</a>
+                <a class="mobile-menu__socials-link-instagram" href=""
+                  >Instagram</a
+                >
               </li>
               <li class="mobile-menu__socials-item">
                 <a class="mobile-menu__socials-link" href="">Twitter</a>
@@ -491,23 +495,21 @@
             </ul>
           </div>
         </div>
-        <div class="page-footer__form">
-          <form>
-            <p class="page-footer__text">Підпишіться на розсилання</p>
-            <div class="page-footer__submit-block">
-              <input
-                type="email"
-                class="page-footer__form-input"
-                name="mail"
-                placeholder="E-mail"
-                required
-              />
-              <button type="submit" class="button page-footer__submit-btn">
-                Підписатись
-              </button>
-            </div>
-          </form>
-        </div>
+
+        <form class="page-footer__form">
+          <p class="page-footer__text">Підпишіться на розсилання</p>
+
+          <input
+            type="email"
+            class="page-footer__form-input"
+            name="mail"
+            placeholder="E-mail"
+            required
+          />
+          <button type="submit" class="button page-footer__submit-btn">
+            Підписатись
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/menu.js"></script>

@@ -150,6 +150,7 @@
   }
 
   &__checkbox-text {
+    display: inline-block;
     margin-left: 23px;
     font-family: "Roboto";
     font-style: normal;
@@ -170,6 +171,7 @@
   }
 
   &__checkbox-link {
+    display: inline-block;
     margin-left: 4px;
     font-family: "Roboto";
     font-style: normal;
