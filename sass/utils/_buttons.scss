@@ -32,9 +32,10 @@
   &--primary {
     @extend%button;
     min-width: 73px;
+    height: 38px;
     padding: 6px 22px;
     font-weight: 500;
-    line-height: 1.87;
+    line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
     color: $SecondaryTextColor;

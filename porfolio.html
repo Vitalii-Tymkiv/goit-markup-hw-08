@@ -46,58 +46,65 @@
               ></use>
             </svg>
           </button>
-          <div class="mobile-menu container" id="mobile-menu" data-menu>
-            <ul class="mobile-menu__site-nav">
-              <li class="mobile-menu__site-nav-item">
-                <a class="mobile-menu__site-nav-link" href="./index.html"
-                  >Студія</a
-                >
-              </li>
-              <li class="mobile-menu__site-nav-item">
-                <a
-                  class="mobile-menu__site-nav-link mobile-menu__site-nav-link--current"
-                  href="./porfolio.html"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="mobile-menu__site-nav-item">
-                <a class="mobile-menu__site-nav-link" href="">Контакти</a>
-              </li>
-            </ul>
+          <div
+            class="mobile-menu is-hidden container"
+            id="mobile-menu"
+            data-menu
+          >
+            <div class="mobile-menu__top">
+              <ul class="mobile-menu__site-nav">
+                <li class="mobile-menu__site-nav-item">
+                  <a
+                    class="mobile-menu__site-nav-link mobile-menu__site-nav-link--current"
+                    href="./index.html"
+                    >Студія</a
+                  >
+                </li>
+                <li class="mobile-menu__site-nav-item">
+                  <a class="mobile-menu__site-nav-link" href="./porfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mobile-menu__site-nav-item">
+                  <a class="mobile-menu__site-nav-link" href="">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-menu__bottom">
+              <ul class="mobile-menu__auth-nav">
+                <li class="mobile-menu__auth-nav-item">
+                  <a
+                    class="mobile-menu__auth-nav-link mobile-menu__auth-nav-link--accented"
+                    href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile-menu__auth-nav-item">
+                  <a
+                    class="mobile-menu__auth-nav-link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
 
-            <ul class="mobile-menu__auth-nav">
-              <li class="mobile-menu__auth-nav-item">
-                <a
-                  class="mobile-menu__auth-nav-link mobile-menu__auth-nav-link--accented"
-                  href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-              <li class="mobile-menu__auth-nav-item">
-                <a
-                  class="mobile-menu__auth-nav-link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-
-            <ul class="mobile-menu__socials">
-              <li class="mobile-menu__socials-item">
-                <a class="mobile-menu__socials-link-instagram" href=""
-                  >Instagram</a
-                >
-              </li>
-              <li class="mobile-menu__socials-item">
-                <a class="mobile-menu__socials-link" href="">Twitter</a>
-              </li>
-              <li class="mobile-menu__socials-item">
-                <a class="mobile-menu__socials-link" href="">Facebook</a>
-              </li>
-              <li class="mobile-menu__socials-item">
-                <a class="mobile-menu__socials-link" href="">LinkedIn</a>
-              </li>
-            </ul>
+              <ul class="mobile-menu__socials">
+                <li class="mobile-menu__socials-item">
+                  <a class="mobile-menu__socials-link-instagram" href=""
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a class="mobile-menu__socials-link" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a class="mobile-menu__socials-link" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a class="mobile-menu__socials-link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <ul class="page-header__site-nav">
@@ -118,7 +125,7 @@
         <ul class="page-header__auth-nav">
           <li class="page-header__auth-nav-item">
             <a
-              class="page-header__contact-link"
+              class="page-header__contact-link page-header__contact-link--higher"
               href="mailto:info@devstudio.com"
             >
               <svg class="page-header__icon" width="16px" height="12px">
@@ -128,7 +135,10 @@
             >
           </li>
           <li class="page-header__auth-nav-item">
-            <a class="page-header__contact-link" href="tel:+380961111111">
+            <a
+              class="page-header__contact-link page-header__contact-link--lower"
+              href="tel:+380961111111"
+            >
               <svg class="page-header__icon" width="10px" height="16px">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
