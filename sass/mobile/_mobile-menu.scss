@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: space-between;
   }
 
   &__site-nav-item {
@@ -28,6 +29,10 @@
     &:not(:first-child) {
       margin-top: 32px;
     }
+  }
+
+  &__bottom {
+    margin-bottom: 48px;
   }
 
   &__site-nav-link {
@@ -43,10 +48,6 @@
     &--current {
       color: $AccentColor;
     }
-  }
-
-  &__auth-nav {
-    margin-top: auto;
   }
 
   &__auth-nav-item {

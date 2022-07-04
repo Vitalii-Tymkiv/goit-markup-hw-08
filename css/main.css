@@ -1418,12 +1418,16 @@ body.is-open .mobile-nav-wrap .logo {
   display: flex;
   flex-direction: column;
   height: 100%;
+  justify-content: space-between;
 }
 .mobile-menu__site-nav-item {
   text-align: left;
 }
 .mobile-menu__site-nav-item:not(:first-child) {
   margin-top: 32px;
+}
+.mobile-menu__bottom {
+  margin-bottom: 48px;
 }
 .mobile-menu__site-nav-link {
   color: rgb(33, 33, 33);
@@ -1437,9 +1441,6 @@ body.is-open .mobile-nav-wrap .logo {
 }
 .mobile-menu__site-nav-link--current {
   color: rgb(33, 150, 243);
-}
-.mobile-menu__auth-nav {
-  margin-top: auto;
 }
 .mobile-menu__auth-nav-item {
   text-align: left;
@@ -1465,7 +1466,6 @@ body.is-open .mobile-nav-wrap .logo {
   line-height: 1.17;
   color: rgb(33, 150, 243);
   letter-spacing: 0.02em;
-  white-space: nowrap;
 }
 .mobile-menu__socials {
   margin-top: 64px;
