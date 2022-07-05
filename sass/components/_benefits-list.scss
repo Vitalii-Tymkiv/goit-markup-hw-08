@@ -122,7 +122,9 @@
     color: $PrimaryBackgroundColor;
     transition: transform 250ms $CubicBezier, opacity 250ms $CubicBezier;
     z-index: 2;
-    overflow-y: scroll;
+    @media screen and (max-width: $Mobile) {
+      overflow-y: scroll;
+    }
   }
   &__link:hover &__hover-text,
   &__link:focus &__hover-text {

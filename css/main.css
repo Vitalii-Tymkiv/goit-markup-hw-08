@@ -1018,7 +1018,11 @@ body.modal-open {
   color: #ffffff;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
-  overflow-y: scroll;
+}
+@media screen and (max-width: 320px) {
+  .benefits-list__hover-text {
+    overflow-y: scroll;
+  }
 }
 .benefits-list__link:hover .benefits-list__hover-text, .benefits-list__link:focus .benefits-list__hover-text {
   transform: translateY(0);
