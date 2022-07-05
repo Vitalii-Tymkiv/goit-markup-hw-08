@@ -815,7 +815,7 @@ body.modal-open {
   }
 }
 .page-footer__form-input {
-  width: 358px;
+  width: 450px;
   margin-top: 20px;
   padding-left: 16px;
   padding-top: 15px;
@@ -840,6 +840,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .page-footer__form-input {
     margin-right: 12px;
+    width: 358px;
   }
 }
 .page-footer__form-input::-moz-placeholder {
