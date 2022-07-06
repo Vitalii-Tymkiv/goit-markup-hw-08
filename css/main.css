@@ -115,7 +115,7 @@ body.modal-open {
 
 .logo--white {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: rgb(255, 255, 255);
   padding: 0;
 }
@@ -1070,7 +1070,7 @@ body.modal-open {
   color: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
 }
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 362px) {
   .button--primary {
     font-size: 11px;
   }
