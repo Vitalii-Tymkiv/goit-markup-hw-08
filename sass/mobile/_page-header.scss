@@ -21,6 +21,14 @@
     margin-left: auto;
   }
 
+  &__icon-menu {
+    transition: fill 2500ms $CubicBezier;
+  }
+
+  &__icon-cross {
+    transition: fill 2500ms $CubicBezier;
+  }
+
   &__menu-button:hover &__icon-menu,
   &__menu-button:focus &__icon-menu {
     fill: $AccentColor;

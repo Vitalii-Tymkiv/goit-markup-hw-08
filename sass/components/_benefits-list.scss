@@ -4,10 +4,10 @@
   margin: -15px;
   padding-left: 0px;
 
-  @media screen and (min-width: $Mobile) {
+  @media screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
-    // align-items: center;
+    align-items: center;
     flex-flow: column nowrap;
   }
 
@@ -85,6 +85,7 @@
       opacity: 0;
       transition: transform 250ms $CubicBezier, opacity 250ms $CubicBezier;
       z-index: 1;
+      // overflow-y: scroll;
     }
 
     &:hover::after,
@@ -122,9 +123,7 @@
     color: $PrimaryBackgroundColor;
     transition: transform 250ms $CubicBezier, opacity 250ms $CubicBezier;
     z-index: 2;
-    @media screen and (max-width: $Mobile) {
-      overflow-y: scroll;
-    }
+    overflow-y: scroll;
   }
   &__link:hover &__hover-text,
   &__link:focus &__hover-text {

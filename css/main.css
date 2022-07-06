@@ -349,6 +349,13 @@ body.modal-open {
 @media screen and (min-width: 0px) {
   .hero__title {
     font-weight: 900;
+    font-size: 24px;
+    line-height: 1.62;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
   }
@@ -907,10 +914,11 @@ body.modal-open {
   margin: -15px;
   padding-left: 0px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
   .benefits-list {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: column nowrap;
   }
 }
@@ -1018,11 +1026,7 @@ body.modal-open {
   color: #ffffff;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
-}
-@media screen and (max-width: 320px) {
-  .benefits-list__hover-text {
-    overflow-y: scroll;
-  }
+  overflow-y: scroll;
 }
 .benefits-list__link:hover .benefits-list__hover-text, .benefits-list__link:focus .benefits-list__hover-text {
   transform: translateY(0);
@@ -1377,6 +1381,12 @@ body.modal-open {
 .mobile-nav-wrap__menu-button.is-open {
   margin-left: auto;
 }
+.mobile-nav-wrap__icon-menu {
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-nav-wrap__icon-cross {
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .mobile-nav-wrap__menu-button:hover .mobile-nav-wrap__icon-menu, .mobile-nav-wrap__menu-button:focus .mobile-nav-wrap__icon-menu {
   fill: rgb(33, 150, 243);
 }
@@ -1448,6 +1458,10 @@ body.is-open .mobile-nav-wrap .logo {
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__site-nav-link:hover, .mobile-menu__site-nav-link:focus {
+  color: rgb(33, 150, 243);
 }
 .mobile-menu__site-nav-link--current {
   color: rgb(33, 150, 243);
@@ -1480,6 +1494,11 @@ body.is-open .mobile-nav-wrap .logo {
 .mobile-menu__socials {
   margin-top: 64px;
   display: inline-flex;
+}
+@media screen and (max-width: 479px) {
+  .mobile-menu__socials {
+    flex-wrap: wrap;
+  }
 }
 .mobile-menu__socials-item {
   justify-content: flex-start;
@@ -1541,6 +1560,6 @@ body.is-open .mobile-nav-wrap .logo {
 @media screen and (max-width: 767px) {
   .button--secondary {
     height: 38px;
-    min-width: 130px;
+    min-width: 103px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,4 @@
 .mobile-menu {
-  // display: none;
   position: fixed;
   top: 40px;
   left: 0;
@@ -14,10 +13,6 @@
   visibility: hidden;
   opacity: 0;
   transition: visibility 250ms $CubicBezier, opacity 250ms $CubicBezier;
-
-  // @media screen and (min-width: $Tablet) {
-  //   display: none;
-  // }
 
   &.is-open {
     visibility: visible;
@@ -49,6 +44,13 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    transition: color 250ms $CubicBezier;
+
+    &:hover,
+    &:focus {
+      color: $AccentColor;
+    }
 
     &--current {
       color: $AccentColor;
@@ -82,17 +84,23 @@
     line-height: 1.17;
     color: $AccentColor;
     letter-spacing: 0.02em;
-    // white-space: nowrap;
   }
 
   &__socials {
     margin-top: 64px;
     display: inline-flex;
+
+    // @media screen and (min-width: $Zero) {
+    //   flex-wrap: wrap;
+    // }
+
+    @media screen and (max-width: 479px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__socials-item {
     justify-content: flex-start;
-    // padding-right: 10px;
 
     &:not(:first-child) {
       margin-left: 10px;
