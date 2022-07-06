@@ -40,6 +40,9 @@
     letter-spacing: 0.03em;
     color: $SecondaryTextColor;
     background-color: $AccentColor;
+    @media screen and (max-width: 325px) {
+      font-size: 11px;
+    }
 
     &:hover,
     &:focus {
@@ -65,6 +68,9 @@
       background-color: $AccentColor;
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+    @media screen and (max-width: 325px) {
+      font-size: 11px;
     }
   }
 }

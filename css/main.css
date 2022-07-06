@@ -1071,6 +1071,11 @@ body.modal-open {
   color: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
 }
+@media screen and (max-width: 325px) {
+  .button--primary {
+    font-size: 11px;
+  }
+}
 .button--primary:hover, .button--primary:focus {
   background-color: rgb(33, 150, 243);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1088,6 +1093,11 @@ body.modal-open {
   color: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+@media screen and (max-width: 325px) {
+  .button--secondary {
+    font-size: 11px;
+  }
 }
 
 .backdrop {
